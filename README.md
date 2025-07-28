@@ -1,5 +1,8 @@
 # **GitHub Finder**
 
+![preview](./.github/preview.png)
+![preview](./.github/preview-repos.png)
+
 Projeto construído com o objetivo de desenvolver um pesquisador de perfis do GitHub, podendo também ver os repositórios de maior sucesso do perfil (os repositórios que mais tiverem estrelas). Utilizando a api do GitHub
 
 [🔗 Clique aqui para acessar](https://github-finder-bamarchetis-projects.vercel.app/)
