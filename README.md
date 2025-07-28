@@ -2,7 +2,7 @@
 
 Projeto construído com o objetivo de desenvolver um pesquisador de perfis do GitHub, podendo também ver os repositórios de maior sucesso do perfil (os repositórios que mais tiverem estrelas). Utilizando a api do GitHub
 
-[🔗 Clique aqui para acessar](https://my-resume-bamarcheti.vercel.app/)
+[🔗 Clique aqui para acessar](https://github-finder-bamarchetis-projects.vercel.app/)
 
 ## **🛠 Tecnologias**
 
