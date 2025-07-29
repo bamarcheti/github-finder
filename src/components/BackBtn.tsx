@@ -1,6 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
-import classes from "./BackBtn.module.css";
+import classes from './BackBtn.module.css';
 
 const BackBtn = () => {
   const navigate = useNavigate();

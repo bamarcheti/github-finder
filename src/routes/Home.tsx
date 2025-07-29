@@ -1,24 +1,24 @@
-import { useState } from "react";
-import Search from "../components/Search";
-import type { UserProps } from "../types/user";
-import User from "../components/User";
-import Error from "../components/Error";
-import Loader from "../components/Loader";
+import { useState } from 'react';
+import Search from '../components/Search';
+import type { UserProps } from '../types/user';
+import User from '../components/User';
+import Error from '../components/Error';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const [user, setUser] = useState<UserProps | null>(null);
   const [error, setError] = useState(false);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
 
   const loadUser = async function (userName: string) {
     setUser(null);
-    setIsLoading(true)
+    setIsLoading(true);
 
     const res = await fetch(`https://api.github.com/users/${userName}`);
 
     const data = await res.json();
 
-    setIsLoading(false)
+    setIsLoading(false);
 
     if (res.status === 404) {
       setError(true);
@@ -33,7 +33,7 @@ const Home = () => {
       login,
       location,
       followers,
-      following,
+      following
     };
     setUser(userData);
   };

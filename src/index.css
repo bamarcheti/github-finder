@@ -1,9 +1,12 @@
+@import 'tailwindcss';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  color: #fff;
 }
 
 body {

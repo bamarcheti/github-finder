@@ -1,18 +1,11 @@
-import classes from "./Repo.module.css";
-import type { RepoProps } from "../types/repo";
+import classes from './Repo.module.css';
+import type { RepoProps } from '../types/repo';
 
-import { AiOutlineStar, AiOutlineFork } from "react-icons/ai";
-import { BsCodeSlash } from "react-icons/bs";
-import { RiGitRepositoryLine } from "react-icons/ri";
+import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai';
+import { BsCodeSlash } from 'react-icons/bs';
+import { RiGitRepositoryLine } from 'react-icons/ri';
 
-const Repo = ({
-  name,
-  language,
-  html_url,
-  forks_count,
-  stargazers_count,
-}: RepoProps) => {
-
+const Repo = ({ name, language, html_url, forks_count, stargazers_count }: RepoProps) => {
   return (
     <div className={classes.repo}>
       <h3>{name}</h3>

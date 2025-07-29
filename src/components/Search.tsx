@@ -1,17 +1,17 @@
-import classes from "./Search.module.css";
-import { useState } from "react";
-import type { KeyboardEvent } from "react";
-import { BsSearch } from "react-icons/bs";
+import classes from './Search.module.css';
+import { useState } from 'react';
+import type { KeyboardEvent } from 'react';
+import { BsSearch } from 'react-icons/bs';
 
 type SearchProps = {
   loadUser: (userName: string) => Promise<void>;
 };
 
 const Search = ({ loadUser }: SearchProps) => {
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState('');
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       loadUser(userName);
     }
   };

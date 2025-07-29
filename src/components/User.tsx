@@ -1,15 +1,9 @@
-import { MdLocationPin } from "react-icons/md";
-import { Link } from "react-router-dom";
-import classes from "./User.module.css";
-import type { UserProps } from "../types/user";
+import { MdLocationPin } from 'react-icons/md';
+import { Link } from 'react-router-dom';
+import classes from './User.module.css';
+import type { UserProps } from '../types/user';
 
-const User = ({
-  login,
-  avatar_url,
-  followers,
-  following,
-  location,
-}: UserProps) => {
+const User = ({ login, avatar_url, followers, following, location }: UserProps) => {
   return (
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
