@@ -1,10 +1,9 @@
-import Repo from "../components/Repo";
-import BackBtn from "../components/BackBtn";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import classes from "./Repos.module.css";
-import Loader from "../components/Loader";
-import type { RepoProps } from "../types/repo";
+import Repo from '../components/Repo';
+import BackBtn from '../components/BackBtn';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import Loader from '../components/Loader';
+import type { RepoProps } from '../types/repo';
 
 const Repos = () => {
   const { username } = useParams();
@@ -40,12 +39,14 @@ const Repos = () => {
   if (!repos && isLoading) return <Loader />;
 
   return (
-    <div className={classes.repos}>
+    <div className="mx-auto flex max-w-[500px] flex-col">
       <BackBtn />
-      <h2>Explore os repositórios do usuário: {username}</h2>
-      {repos && repos.length === 0 && <p>Não há repositórios.</p>}
+      <h2 className="mb-8 text-center text-xl font-bold">
+        Explore os repositórios do usuário: <u>{username}</u>
+      </h2>
+      {repos && repos.length === 0 && <p className="text-center">Não há repositórios.</p>}
       {repos && repos.length > 0 && (
-        <div className={classes.repos_container}>
+        <div className="bg-azul-200 flex flex-wrap items-center gap-5 rounded-2xl p-8">
           {repos.map((repo: RepoProps) => (
             <Repo key={repo.name} {...repo} />
           ))}
