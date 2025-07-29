@@ -1,10 +1,9 @@
-import classes from './App.module.css';
 import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className={classes.app}>
-      <h1>Github Finder</h1>
+    <div className="mx-auto max-w-[500px]">
+      <h1 className="mb-4 text-center text-[2rem] font-bold">Github Finder</h1>
       <Outlet />
     </div>
   );

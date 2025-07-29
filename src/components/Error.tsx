@@ -1,7 +1,7 @@
 const Error = () => {
   return (
     <div>
-      <p>Usuário não encontrado!</p>
+      <p className="text-center">Usuário não encontrado!</p>
     </div>
   );
 };

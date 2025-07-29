@@ -1,11 +1,9 @@
 import { FaSpinner } from 'react-icons/fa';
 
-import classes from './Loader.module.css';
-
 const Loader = () => {
   return (
     <>
-      <FaSpinner className={classes.loader} />
+      <FaSpinner className="absolute left-1/2 mt-10 ml-[-25px] animate-spin text-[50px]" />
     </>
   );
 };
