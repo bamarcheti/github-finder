@@ -1,11 +1,11 @@
 import js from '@eslint/js';
-import globals from 'globals';
+import prettierPlugin from 'eslint-plugin-prettier';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
-import tseslint from 'typescript-eslint';
 import { globalIgnores } from 'eslint/config';
-const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommended');
-const prettier = require('prettier');
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config([
   globalIgnores(['dist']),
@@ -23,7 +23,6 @@ export default tseslint.config([
       tseslint.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
-      prettier,
       eslintPluginPrettierRecommended
     ],
     languageOptions: {
