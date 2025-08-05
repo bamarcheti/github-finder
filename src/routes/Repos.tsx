@@ -1,8 +1,8 @@
-import Repo from '../components/Repo';
-import BackBtn from '../components/BackBtn';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import BackBtn from '../components/BackBtn';
 import Loader from '../components/Loader';
+import Repo from '../components/Repo';
 import type { RepoProps } from '../types/repo';
 
 const Repos = () => {
