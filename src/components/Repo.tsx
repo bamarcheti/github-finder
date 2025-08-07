@@ -50,7 +50,7 @@ const Repo = ({
         </a>
         {homepage && (
           <a
-            href={html_url}
+            href={homepage}
             target="_blank"
             className={`${buttonStyle} w-full min-[375px]:w-fit min-[375px]:px-9 min-[475px]:w-full`}
           >
