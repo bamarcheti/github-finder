@@ -3,6 +3,15 @@
 ![preview](./.github/preview.png)
 ![preview](./.github/preview-repos.png)
 
+<p align="center">
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#contato">Contato</a>
+</p>
+
+
+## **💡 Sobre**
 Projeto construído com o objetivo de desenvolver um pesquisador de perfis do GitHub, podendo também ver os repositórios de maior sucesso do perfil (os repositórios que mais tiverem estrelas). Utilizando a api do GitHub
 
 [🔗 Clique aqui para acessar](https://github-finder.bamarcheti.dev.br)
@@ -26,7 +35,7 @@ Projeto construído com o objetivo de desenvolver um pesquisador de perfis do Gi
 
 - **_[README-install](./README-install.md)_**
 
-## **💛 Contato**
+## **💜 Contato**
 
 [<img src='https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About&logoColor=white' alt='Website' height='30'>](https://bamarcheti.dev.br)
 [<img src='https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white' alt='Discord' height='30'>](https://discord.com/channels/@ba_marcheti#3824)
